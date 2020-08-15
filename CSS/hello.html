@@ -1,0 +1,97 @@
+
+<html>
+	<head>  
+		<title>这是一个标题</title>
+	</head>
+	<!--   html的注释  -->
+	<body>
+	<font size="5" color="red">这是我的第一个html文件</font><br/>
+	<hr/>
+	<font size="5" color="green">这是我的第一个html文件</font><br/>
+	<hr/>
+	<font size="5" color="blue">这是我的第一个html文件</font><br/>
+	<hr/>
+	这是我的第二条！
+	<hr/>
+	
+	<dl>
+		<dt>航天科工</dt>
+		<dd>财务部</dd>
+		<dd>学工部</dd>
+		<dd>人事部</dd>
+	</dl>
+	<hr/>
+	<!-- 有序列表  -->
+	<ol type="i">
+		<li>财务部</li>
+		<li>学工部</li>
+		<li>人事部</li>
+	</ol>
+	
+	<hr/>
+	<a name="top">顶部</a>
+	<!-- 无序列表 -->
+	<ul type="circle">
+		<li>财务部</li>
+		<li>学工部</li>
+		<li>人事部</li>
+	</ul>
+	
+	<!-- 图片标签 -->
+	<img src="a.jpg" width="300" height="400" alt="图片上的文字"/>
+	
+	<!-- 超链接标签 -->
+	<a href="#" target="_blank">这是一个超链接</a>
+	<br/>
+	
+	<!-- 定位资源 -->
+	<a href="#top">回到顶部</a>
+	
+	<!-- 原样输出 -->
+	<pre>
+	
+	</pre>
+	
+	<!--  表格  -->
+	<table border="1" bordercolor="blue" cellspacing="0" width="200" height="150">
+		<caption>人员信息</caption>
+		<!-- 合并单元 -->
+		<tr align=center> <td colspan="3">人员信息</td> </tr>
+		<tr align=center> <th>name</th> <th>age</th> <th>id</th></tr>
+		<tr> <td>linjie</td> <td>25</td> <td>1</td></tr>
+		<tr> <td>lingling</td> <td>26</td> <td>2</td></tr>
+	</table>
+	
+	<!-- 表单标签 action：表示提交地址   method:表单提交方式，两种get和post-->
+	<form action="hello.html" method="post">
+		手机号码:<input type="text"/><br/>
+		创建密码:<input type="password"/><br/>
+		<!--单选框-->
+		性别:<input type="radio" name="sex1" value="nv" checked="checked"/>女<input type="radio" name="sex1" value="nan"/>男<br/>
+		<!--复选框-->
+		爱好:<input type="checkbox" name="love" value="y"/>羽毛球<input type="checkbox" name="love" value="p"/>乒乓球
+		<input type="checkbox" name="love" value="pai"/>排球<br/>
+		<!--文件输入项--->
+		文件选择:<input type="file"><br/>
+		<!--下拉输入项-->
+		生日:<select name="birth">
+				<option value="0">请选择</option>
+				<option value="0" selected="selected">1991</option>
+				<option value="0">1992</option>
+				<option value="0">1993</option>
+			</select><br/>
+		<!--文本域-->
+		自我描述:<textarea cols="10" rows="10"></textarea><br/>
+		隐藏项:<input type="hidden"/><br/>
+		<!--提交按钮-->
+		<input type="submit" value="注册">
+		<!--图片提交：<input type="image" src="a.jpg">-->
+		<!--重置-->
+		<input type="reset"/>
+		<!--普通按钮-->
+		<input type="button" value="普通按钮"/>
+		
+	</form>
+	
+	</body>
+</html>
